@@ -1,0 +1,421 @@
+
+
+* {
+   
+    font-family: 'Raleway', sans-serif; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.topo {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;     
+    justify-content: flex-start; 
+    padding-left: 150px;     
+    gap: 10px;               
+    
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1); 
+    position: relative;
+    z-index: 10; 
+    box-sizing: border-box; 
+}
+
+.imagens-local {
+    width: 25px;
+    height: auto;
+}
+
+.topo h1 {
+    color: #5400dd; 
+    font-size: 22px;
+    margin: 0;
+}
+
+.fundo-praia {
+    background-image: url('imagens/bahia.jpg'); 
+    background-size: cover;    
+    background-position: center center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: calc(100vh - 60px);
+    padding: 40px 20px;
+}
+
+.container-formulario {
+    background-color: white;
+    width: 90%;            
+    max-width: 1200px;     
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+
+.cabecalho-form {
+    background-color: #5400dd; 
+    color: white;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho-form img {
+    width: 25px;  
+    height: auto;
+    margin-right: 10px;
+}
+
+.cabecalho-form h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form {
+    padding: 30px;
+}
+
+h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 14px;
+    color: #555;
+}
+
+.grupo-duplo {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 15px;
+}
+
+.grupo-duplo .campo {
+    flex: 1; 
+}
+
+.grupo-duplo input, 
+.grupo-duplo select {
+    margin-bottom: 0; 
+}
+
+.campo-largo {
+    margin-bottom: 15px;
+}
+
+.campo-largo p {
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 5px;
+    transform: scale(1.1); 
+}
+
+label[for] {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    background-color: #5400dd;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #3e00a3; 
+    transition: 0.3s;
+}
+
+.secao-conteudo {
+    padding: 40px 10%; 
+    background-color: white;
+}
+
+.fundo-cinza {
+    background-color: #f4f4f4; 
+}
+
+.texto-intro {
+    margin-bottom: 20px;
+}
+
+.texto-intro h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.grade-imagens {
+    display: flex; 
+    gap: 15px;
+    height: 400px; 
+}
+
+.foto-grande {
+    flex: 1; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.foto-grande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.fotos-pequenas-container {
+    flex: 1; 
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.foto-pequena {
+    width: calc(50% - 8px); 
+    height: calc(50% - 8px);
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-pequena img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.legenda-foto {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); 
+    background: rgba(0,0,0,0.3); 
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.cards-natureza {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    flex: 1; 
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-texto {
+    padding: 15px;
+}
+
+.card-texto h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.card-texto p {
+    color: #777;
+    margin: 0;
+}
+
+footer {
+    background-color: #5400dd; 
+    color: white;
+    padding: 40px 10%;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.coluna-footer h3 {
+    border-bottom: 2px solid #7c4dff; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.item-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-footer img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    filter: brightness(0) invert(1); 
+}
+
+.contato {
+    color: #fff;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .container-formulario {
+        width: 80%; 
+        max-width: 900px;
+    }
+
+    .topo {
+        padding-left: 50px; 
+    }
+}
+
+
+@media (min-width: 541px) and (max-width: 768px) {
+    .container-formulario {
+        width: 90%;
+    }
+
+    .topo {
+        padding-left: 20px; 
+        justify-content: center; 
+    }
+
+    form {
+        padding: 20px; 
+    }
+    
+    .grupo-duplo {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    
+   
+    .topo {
+        padding-left: 0;
+        justify-content: center;
+        height: 50px;
+    }
+    
+    .topo h1 {
+        font-size: 18px; 
+    }
+
+    
+    .container-formulario {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    form {
+        padding: 15px; 
+    }
+
+    
+    .grupo-duplo {
+        display: block; 
+    }
+
+    .grupo-duplo .campo {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    input[type="date"], select {
+        width: 100%;
+    }
+
+    
+    .grade-imagens {
+        flex-direction: column; 
+        height: auto;
+    }
+    
+    .foto-grande, .foto-pequena {
+        width: 100%; 
+        height: 200px; 
+        margin-bottom: 10px;
+    }
+    
+    
+    .foto-pequena {
+        width: 100%; 
+    }
+
+    
+    .cards-natureza {
+        flex-direction: column;
+    }
+
+    
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .item-footer {
+        justify-content: center;
+    }
+
+    .secao-conteudo, footer {
+        padding: 40px 20px;
+    }
+}
